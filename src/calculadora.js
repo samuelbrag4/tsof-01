@@ -22,3 +22,7 @@ export function potencia(base, expoente) {
 export function raizQuadrada(numero) {
     return Math.sqrt(numero);
 }
+
+export function raizCubica(numero) {
+    return Math.cbrt(numero);
+}

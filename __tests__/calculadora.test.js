@@ -1,9 +1,4 @@
-import { soma } from "../src/calculadora.js";
-import { subtrai } from "../src/calculadora.js";
-import { multiplica } from "../src/calculadora.js";
-import { divide } from "../src/calculadora.js";
-import { potencia } from "../src/calculadora.js";
-import { raizQuadrada } from "../src/calculadora.js";
+import { soma, subtrai, multiplica, divide, potencia, raizQuadrada, raizCubica } from "../src/calculadora.js";
 
 describe("Calculadora", () => {
     test("Deve somar dois números corretamente", () => {
@@ -81,5 +76,17 @@ describe("Calculadora", () => {
 
         // Assert (Verificar)
         expect(resultado).toBe(4);
+    })
+
+    test("Deve calcular a raiz cúbica corretamente", () => {
+        // AAA
+        // Arrange (Preparar)
+        const numero = 27;
+
+        // Act (Executar)
+        const resultado = raizCubica(numero);
+
+        // Assert (Verificar)
+        expect(resultado).toBe(3);
     })
 })
