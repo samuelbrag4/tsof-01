@@ -1,0 +1,26 @@
+{
+  "name": "tsof-01",
+  "version": "1.0.0",
+  "description": "Repositorio para a aula inicial de testes de software",
+  "keywords": [
+    "NodeJS",
+    "Javascript",
+    "TSOF",
+    "Jest"
+  ],
+  "homepage": "https://github.com/samuelbrag4/tsof-01#readme",
+  "bugs": {
+    "url": "https://github.com/samuelbrag4/tsof-01/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelbrag4/tsof-01.git"
+  },
+  "license": "MIT",
+  "author": "Samuel Braga",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
