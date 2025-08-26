@@ -3,6 +3,7 @@ import { subtrai } from "../src/calculadora.js";
 import { multiplica } from "../src/calculadora.js";
 import { divide } from "../src/calculadora.js";
 import { potencia } from "../src/calculadora.js";
+import { raizQuadrada } from "../src/calculadora.js";
 
 describe("Calculadora", () => {
     test("Deve somar dois números corretamente", () => {
@@ -68,5 +69,17 @@ describe("Calculadora", () => {
 
         // Assert (Verificar)
         expect(resultado).toBe(8);
+    })
+
+    test("Deve calcular a raiz quadrada corretamente", () => {
+        // AAA
+        // Arrange (Preparar)
+        const numero = 16;
+
+        // Act (Executar)
+        const resultado = raizQuadrada(numero);
+
+        // Assert (Verificar)
+        expect(resultado).toBe(4);
     })
 })

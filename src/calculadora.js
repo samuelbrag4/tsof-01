@@ -18,3 +18,7 @@ export function divide(a, b) {
 export function potencia(base, expoente) {
     return Math.pow(base, expoente);
 }
+
+export function raizQuadrada(numero) {
+    return Math.sqrt(numero);
+}
