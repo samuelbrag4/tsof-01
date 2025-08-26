@@ -2,6 +2,7 @@ import { soma } from "../src/calculadora.js";
 import { subtrai } from "../src/calculadora.js";
 import { multiplica } from "../src/calculadora.js";
 import { divide } from "../src/calculadora.js";
+import { potencia } from "../src/calculadora.js";
 
 describe("Calculadora", () => {
     test("Deve somar dois números corretamente", () => {
@@ -54,5 +55,18 @@ describe("Calculadora", () => {
 
         // Assert (Verificar)
         expect(resultado).toBe(2);
+    })
+
+    test("Deve calcular a potência corretamente", () => {
+        // AAA
+        // Arrange (Preparar)
+        const base = 2;
+        const expoente = 3;
+
+        // Act (Executar)
+        const resultado = potencia(base, expoente);
+
+        // Assert (Verificar)
+        expect(resultado).toBe(8);
     })
 })

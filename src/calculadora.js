@@ -14,3 +14,7 @@ export function multiplica(a, b) {
 export function divide(a, b) {
     return a / b;
 }
+
+export function potencia(base, expoente) {
+    return Math.pow(base, expoente);
+}
