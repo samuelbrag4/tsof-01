@@ -1,6 +1,7 @@
 import { soma } from "../src/calculadora.js";
 import { subtrai } from "../src/calculadora.js";
 import { multiplica } from "../src/calculadora.js";
+import { divide } from "../src/calculadora.js";
 
 describe("Calculadora", () => {
     test("Deve somar dois números corretamente", () => {
@@ -40,5 +41,18 @@ describe("Calculadora", () => {
 
         // Assert (Verificar)
         expect(resultado).toBe(50);
+    })
+
+    test("Deve dividir dois números corretamente", () => {
+        // AAA
+        // Arrange (Preparar)
+        const a = 10;
+        const b = 5;
+
+        // Act (Executar)
+        const resultado = divide(a, b);
+
+        // Assert (Verificar)
+        expect(resultado).toBe(2);
     })
 })
